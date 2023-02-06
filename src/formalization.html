@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Оформление заказа"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="formalization">
+					<div class="formalization__container">
+						<div class="formalization__path path d-flex ai-center">
+							<a href="#">Главная</a>
+							<a href="#">Корзина</a>
+							<a href="#">Оформление заказа</a>
+						</div>
+						<h1 class="formalization__title title text-center">Оформление заказа</h1>
+						<form data-ajax data-popup-message="#popup-form" class="formalization__content d-flex ai-start form" action="#"  method="POST">
+							<div class="formalization__form form-formalization d-flex">
+								<div class="form-formalization__item form-formalization__item_100p">
+									<h4 class="form-formalization__title">1. Контакты получателя</h4>
+									<div class="form-formalization__item-content d-grid col-md-50 ">
+										<div class="form__item form-product__input form-formalization__input d-flex">
+											<label for="recipient-name" class="form-product__label form__label">Имя получателя *</label>
+											<input autocomplete="off"  type="text" value="" id="recipient-name" name="recipient-name" data-required data-error="Введите имя получателя" placeholder="" class="input">
+										</div>
+										<div class="form__item form-product__input d-flex form-formalization__input">
+											<label class="form-product__label form__label">Регион *</label>
+											<select data-required name="region" data-class-modif="form">
+												<option value="1" selected>Киев</option>
+												<option value="2">Одесса</option>
+												<option value="3">Харьков</option>
+												<option value="4">Днипро</option>
+												<option value="5">Запорожье</option>
+											</select>
+										</div>
+										<div class="form__item form-product__input form-formalization__input d-flex">
+											<label for="recipient-phone" class="form-product__label form__label">Телефон получателя *</label>
+											<input autocomplete="off" type="text" value="" id="recipient-phone" data-required="phone" name="recipient-phone" data-error="Введите номер телефона получателя" placeholder="" class="input">
+										</div>
+										<div class="form__item form-product__input form-formalization__input d-flex">
+											<label for="recipient-adress" class="form-product__label form__label">Адрес *</label>
+											<input autocomplete="off" type="text" value="" id="recipient-adress" name="recipient-adress" data-required data-error="Введите адресс получателя" placeholder="" class="input">
+										</div>
+										<div class="form__item form-product__input form-formalization__input d-flex">
+											<label for="recipient-adress" class="form-product__label form__label">Дата доставки</label>
+											<input data-required autocomplete="off" type="text" data-datepicker value="" id="recipient-adress" name="recipient-adress" data-error="Введите адресс получателя" placeholder="" class="input">
+											<div class="form-formalization__icon">
+												<img class="img-fluid" src="@img/icons/calendar.svg" alt="Calendar icon">
+											</div>
+										</div>
+										<div class="form__item form-product__input d-flex form-formalization__input">
+											<label class="form-product__label form__label">Время доставки</label>
+											<select data-required name="region" data-class-modif="form">
+												<option value="1" selected>6:00 - 9:00</option>
+												<option value="2">9:00 - 12:00</option>
+												<option value="3">12:00 - 15:00</option>
+												<option value="4">15:00 - 18:00</option>
+												<option value="5">18:00 -21:00</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="form-formalization__item">
+									<h4 class="form-formalization__title">2. Контакты отправителя</h4>
+									<div class="form-formalization__item-content d-grid">
+										<div class="form__item form-product__input d-flex">
+											<label for="sender-name" class="form-product__label form__label">Имя *</label>
+											<input autocomplete="off" data-required type="text" value="" id="sender-name" name="sender-name" data-error="Введите имя получателя" placeholder="" class="input">
+										</div>
+										<div class="form__item form-product__input d-flex">
+											<label for="sender-phone" class="form-product__label form__label">Телефон *</label>
+											<input autocomplete="off" data-required="phone" type="text" value="" id="sender-phone" name="sender-phone" data-error="Введите телефон получателя" placeholder="" class="input">
+										</div>
+										<div class="form__item form-product__input d-flex">
+											<label for="sender-email" class="form-product__label form__label">Email *</label>
+											<input autocomplete="off" type="text" value="" id="sender-email" name="sender-email" data-error="Введите Email получателя" data-required="email" placeholder="" class="input">
+										</div>
+									</div>
+								</div>
+								<div class="form-formalization__item">
+									<h4 class="form-formalization__title">3. Детали доставки</h4>
+									<div class="form-formalization__checkbox checkbox">
+										<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<label for="c_1" class="checkbox__label _icon-check"><span class="checkbox__text">Доставка сюрпризом</span></label>
+									</div>
+									<div class="form-formalization__checkbox checkbox">
+										<input id="c_2" class="checkbox__input" type="checkbox" value="2" name="form[]">
+										<label for="c_2" class="checkbox__label _icon-check"><span class="checkbox__text">Фотоотчет (+ 15 грн)</span></label>
+									</div>
+									<div class="form-formalization__checkbox checkbox">
+										<input id="c_3" class="checkbox__input" type="checkbox" value="3" name="form[]">
+										<label for="c_3" class="checkbox__label _icon-check"><span class="checkbox__text">Добавить вазу (+ 249 грн)</span></label>
+									</div>
+									<div class="form-formalization__checkbox checkbox">
+										<input id="c_4" class="checkbox__input" type="checkbox" value="4" name="form[]">
+										<label for="c_4" class="checkbox__label _icon-check"><span class="checkbox__text">Напомнить о событии</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="formalization__result	result-formalization">
+                <div class="result-formalization__card result-cart info-product">
+                	<h3 class="result-cart__title title title_s36 pink-color">Ваш заказ</h3>
+	                <div class="result-cart__info">
+	                  <div class="info-product__item d-flex jc-sb">
+	                    <div class="info-product__label">25 желтых тюльпанов</div>
+	                    <div class="info-product__descr">5 558 ₴</div>
+	                  </div>
+	                  <div class="info-product__item d-flex jc-sb">
+	                    <div class="info-product__label">25 розовых пионовидных роз</div>
+	                    <div class="info-product__descr">254 ₴</div>
+	                  </div>
+										<div class="info-product__item d-flex jc-sb">
+	                    <div class="info-product__label">Мечтательница</div>
+	                    <div class="info-product__descr">254 ₴</div>
+	                  </div>
+										<div class="info-product__item d-flex jc-sb">
+	                    <div class="info-product__label main-color">Сумма заказа</div>
+	                    <div class="info-product__descr">6000 ₴</div>
+	                  </div>
+										<div class="info-product__item d-flex jc-sb">
+	                    <div class="info-product__label main-color">Доставка</div>
+	                    <div class="info-product__descr">100 ₴</div>
+	                  </div>
+										<div class="info-product__item d-flex jc-sb">
+	                    <div class="info-product__label main-color">Фотоотчет</div>
+	                    <div class="info-product__descr">15 ₴</div>
+	                  </div>
+	                  <div class="result-cart__item d-flex jc-sb">
+	                    <div class="result-cart__label">Всего</div>
+	                    <div class="result-cart__descr fw-700">5 304 ₴</div>
+	                  </div>
+	                </div>
+	                <button class="result-cart__btn button" type="submit">Оформить заказ</button>
+                </div>
+								<div class="form__item result-formalization__input form-product__input d-flex">
+									<label for="coupon" class="result-formalization__label form__label">Купон</label>
+									<input autocomplete="off" type="text" value="" id="coupon" name="cupon"  placeholder="Введите код купона" class="input">
+								</div>
+								<div class="form__item result-formalization__input form-product__input d-flex">
+									<label for="certificate" class="result-formalization__label form__label">Подарочный сертификат</label>
+									<input autocomplete="off" type="text" value="" id="certificate" name="certificate"  placeholder="Введите номер подарочного сертификата" class="input">
+								</div>
+								<button class="result-formalization__btn result-cart__btn button" type="button">Применить</button>
+              </div>
+						</form>
+					</div>
+				</section>
+        <section class="contacts">
+					<div class="contacts__container">
+						<div class="contacts__map">
+							<iframe class="img-w-100p" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8534.799938740196!2d30.512388118621416!3d50.507914339258434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d384545e8773%3A0x90406c9eff1c3402!2sOstriv%20Savanna!5e0!3m2!1sru!2sua!4v1675183761036!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+						<div class="contacts__content d-flex direction-col">
+							<a href="home.html" class="contacts__logo as-center">
+								<img data-src="@img/logo.png" alt="Logo">
+							</a>
+							<div class="contacts__links d-flex direction-col">
+								<div class="contacts__item d-flex ai-start">
+									<div class="contacts__descr _icon-tel d-flex ai-center">Телефон:</div>
+									<div class="contacts__link-wrap d-flex direction-col">
+										<a href="tel:+380638293030" class="contacts__link hhv-pink">+38 (063) 829 30 30</a>
+										<a href="tel:+380638293030" class="contacts__link hhv-pink">+38 (063) 829 30 30</a>
+									</div>
+								</div>
+								<div class="contacts__item d-flex ai-start">
+									<div class="contacts__descr _icon-skype d-flex ai-center">Skype:</div>
+									<div class="contacts__link-wrap d-flex direction-col">
+										<a class="contacts__link">Flowers-Ukraine</a>
+									</div>
+								</div>
+								<div class="contacts__item d-flex ai-start">
+									<div class="contacts__descr _icon-mail d-flex ai-center">Почта:</div>
+									<div class="contacts__link-wrap d-flex direction-col">
+										<a href="mailto:flowers.ukraine2014@gmail.com" class="contacts__link hhv-pink">flowers.ukraine2014@gmail.com</a>
+									</div>
+								</div>
+							</div>
+							<div class="contacts__sociable sociable d-flex ai-center">
+								<a href="#" class="sociable__btn _icon-insta"></a>
+								<a href="#" class="sociable__btn _icon-skype"></a>
+								<a href="#" class="sociable__btn _icon-fb"></a>
+							</div>
+						</div>
+
+					</div>
+				</section>
+      </main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
