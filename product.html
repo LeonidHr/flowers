@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Карточка товара</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230206130638">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header-top d-flex jc-start ai-center">
+					<div data-parent-change data-header-item class="header-top__item item-header-top">
+						<button data-header-btn type="button" class="item-header-top__btn d-flex ai-center direction-row-rev _icon-triangle">
+							<div data-visible class="pink-color item-header-top__item">Грн</div>
+							<div class="white-color item-header-top__derc">Валюта</div>
+						</button>
+						<ul class="item-header-top__list d-flex direction-col">
+							<li data-change class="item-header-top__item"><button type="button">USD</button></li>
+							<li data-change class="item-header-top__item"><button type="button">EUR</button></li>
+							<li data-change class="item-header-top__item"><button type="button">GBP</button></li>
+							<li data-change class="item-header-top__item"><button type="button">PLN</button></li>
+						</ul>
+					</div>
+					<div data-parent-change data-header-item data-da=".header-top,650" class="header-top__item item-header-top">
+						<button data-header-btn type="button" class="item-header-top__btn d-flex ai-center direction-row-rev _icon-triangle">
+							<div data-visible class="pink-color item-header-top__item">RU</div>
+							<div class="white-color item-header-top__derc">Язык</div>
+						</button>
+						<ul class="item-header-top__list d-flex direction-col">
+							<li data-change class="item-header-top__item"><button type="button">UKR</button></li>
+							<li data-change class="item-header-top__item"><button type="button">ENG</button></li>
+							<li data-change class="item-header-top__item"><button type="button">PLS</button></li>
+						</ul>
+					</div>
+					<div data-parent-change data-header-item class="header-top__item item-header-top item-header-top_dn-480">
+						<button data-header-btn type="button" class="item-header-top__btn d-flex ai-center direction-row-rev _icon-triangle">
+							<div data-visible class="item-header-top__item pink-color">Киев</div>
+							<div class="white-color item-header-top__derc">Город</div>
+						</button>
+						<ul class="item-header-top__list d-flex direction-col">
+							<li data-change class="item-header-top__item"><button>Винница</button></li>
+							<li data-change class="item-header-top__item"><button>Днепр</button></li>
+							<li data-change class="item-header-top__item"><button>Донецк</button></li>
+							<li data-change class="item-header-top__item"><button>Житомир</button></li>
+							<li data-change class="item-header-top__item"><button>Запорожье</button></li>
+							<li data-change class="item-header-top__item"><button>Ивано-Франковск</button></li>
+							<li data-change class="item-header-top__item"><button>Кропивницкий</button></li>
+							<li data-change class="item-header-top__item"><button>Луганск</button></li>
+							<li data-change class="item-header-top__item"><button>Луцк</button></li>
+							<li data-change class="item-header-top__item"><button>Львов</button></li>
+							<li data-change class="item-header-top__item"><button>Николаев</button></li>
+							<li data-change class="item-header-top__item"><button>Одесса</button></li>
+							<li data-change class="item-header-top__item"><button>Полтава</button></li>
+							<li data-change class="item-header-top__item"><button>Ровно</button></li>
+							<li data-change class="item-header-top__item"><button>Симферополь</button></li>
+							<li data-change class="item-header-top__item"><button>Сумы</button></li>
+							<li data-change class="item-header-top__item"><button>Тернополь</button></li>
+							<li data-change class="item-header-top__item"><button>Ужгород</button></li>
+							<li data-change class="item-header-top__item"><button>Харьков</button></li>
+							<li data-change class="item-header-top__item"><button>Херсон</button></li>
+							<li data-change class="item-header-top__item"><button>Хмельницкий</button></li>
+							<li data-change class="item-header-top__item"><button>Черкассы</button></li>
+							<li data-change class="item-header-top__item"><button>Чернигов</button></li>
+							<li data-change class="item-header-top__item"><button>Черновцы</button></li>
+						</ul>
+					</div>
+					<div class="header-top__item item-header-top item-header-top_dn-992 d-flex ai-center _icon-like">
+						<div class="item-header-top__num">2</div>
+						<a href="#" class="white-color item-header-top__derc">Закладки</a>
+					</div>
+					<a href="#" class="header-top__item item-header-top d-flex ai-center _icon-car">
+						<div class="white-color item-header-top__derc">Доставка и оплата</div>
+					</a>
+					<a href="#" class="header-top__item item-header-top item-header-top_dn-992 d-flex ai-center _icon-tel">
+						<div class="white-color item-header-top__derc">Контакты</div>
+					</a>
+					<div class="header-top__item item-header-top item-header-top_dn-650 d-flex ai-center flx-auto jc-end _icon-human">
+						<div class="white-color item-header-top__btn d-flex ai-center">
+							<button type="button" class="item-header-top__derc" id="account-login">Вход</button>
+							<span class="pink-color">|</span>
+							<button type="button" class="item-header-top__derc" id="registering">Регистрация</button>
+						</div>
+					</div>
+				</div>
+				<div class="header-content d-flex ai-center jc-sb">
+					<a data-da=".header-content__content,480" href="home.html" class="header-content__logo">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img class="img-fluid" src="img/logo.png" alt="Logo"></picture>
+					</a>
+					<div class="header-content__content flx-auto d-flex direction-col">
+						<div class="header-content__search search-header d-flex ai-center">
+							<div class="search-header__select">
+								<select name="form[]" data-class-modif="form">
+									<option selected value="0">Поиск по категориям</option>
+									<option value="1">Букеты</option>
+									<option value="2">Розы</option>
+									<option value="3">Цветы в коробке</option>
+									<option value="4">Композиции</option>
+									<option value="5">Подарки</option>
+									<option value="6">Подарочные корзины</option>
+									<option value="7">Букеты невесты</option>
+									<option value="8">Вкусные букеты</option>
+								</select>
+							</div>
+							<div data-da=".header-contacts,480,first" class="search-header__input flx-auto d-flex ai-center">
+								<input autocomplete="off" type="text" name="form[]" placeholder="Поиск по товарам" class="input flx-auto">
+								<button type="button" class="_icon-search search-header__btn"></button>
+							</div>
+						</div>
+						<div class="header-content__menu menu">
+							<nav class="menu__body">
+								<div class="popup-descr menu__descr">Меню</div>
+								<ul class="menu__info">
+									<li data-parent-change data-header-item class="menu__item menu__info-item">
+										<button data-header-btn type="button" class="item-header-top__btn d-flex img-w-100p ai-center jc-sb">
+											<div data-visible class="menu__link">Киев</div>
+											<div class="pink-color">Выбрать город</div>
+										</button>
+										<ul class="item-header-top__list d-flex direction-col">
+											<li data-change class="item-header-top__item"><button>Винница</button></li>
+											<li data-change class="item-header-top__item"><button>Днепр</button></li>
+											<li data-change class="item-header-top__item"><button>Донецк</button></li>
+											<li data-change class="item-header-top__item"><button>Житомир</button></li>
+											<li data-change class="item-header-top__item"><button>Запорожье</button></li>
+											<li data-change class="item-header-top__item"><button>Ивано-Франковск</button></li>
+											<li data-change class="item-header-top__item"><button>Кропивницкий</button></li>
+											<li data-change class="item-header-top__item"><button>Луганск</button></li>
+											<li data-change class="item-header-top__item"><button>Луцк</button></li>
+											<li data-change class="item-header-top__item"><button>Львов</button></li>
+											<li data-change class="item-header-top__item"><button>Николаев</button></li>
+											<li data-change class="item-header-top__item"><button>Одесса</button></li>
+											<li data-change class="item-header-top__item"><button>Полтава</button></li>
+											<li data-change class="item-header-top__item"><button>Ровно</button></li>
+											<li data-change class="item-header-top__item"><button>Симферополь</button></li>
+											<li data-change class="item-header-top__item"><button>Сумы</button></li>
+											<li data-change class="item-header-top__item"><button>Тернополь</button></li>
+											<li data-change class="item-header-top__item"><button>Ужгород</button></li>
+											<li data-change class="item-header-top__item"><button>Харьков</button></li>
+											<li data-change class="item-header-top__item"><button>Херсон</button></li>
+											<li data-change class="item-header-top__item"><button>Хмельницкий</button></li>
+											<li data-change class="item-header-top__item"><button>Черкассы</button></li>
+											<li data-change class="item-header-top__item"><button>Чернигов</button></li>
+											<li data-change class="item-header-top__item"><button>Черновцы</button></li>
+										</ul>
+									</li>
+									<li class="menu__item menu__info-item d-flex direction-row-rev ai-center jc-sb _icon-like">
+										<a href="#" class="menu__link">Закладки</a>
+										<div class="menu__info-num">2</div>
+									</li>
+									<li data-header-item class="menu__item menu__info-item">
+										<button data-header-btn type="button" class="item-header-top__btn img-w-100p d-flex ai-center jc-sb">
+											<div class="menu__link">Личный кабинет</div>
+											<div class="pink-color">Войти</div>
+										</button>
+									</li>
+								</ul>
+								<ul class="menu__list  d-flex">
+									<li class="menu__item pink-color"><a href="catalog.html" class="menu__link">Каталог товаров</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Форум</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+									<li data-header-item class="menu__item">
+										<button type="button" data-header-btn class="menu__link d-flex direction-row-rev ai-center img-w-100p jc-sb _icon-triangle item-header-top__btn">Информация</button>
+										<ul class="item-header-top__list d-flex direction-col">
+											<li class="item-header-top__item white-color"><button type="button">О нас</button></li>
+											<li class="item-header-top__item white-color"><button type="button">Оплата и доставка</button></li>
+											<li class="item-header-top__item white-color"><button type="button">Доставка цветов в офис</button></li>
+											<li class="item-header-top__item white-color"><button type="button">Фото доставок</button></li>
+										</ul>
+									</li>
+									<li class="menu__item menu__item_dn-992"><a href="#" class="menu__link _icon-tel pink-color d-flex ai-center">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header-contacts d-flex">
+						<div data-da=".menu__body,992" class="header-contacts__sociable sociable d-flex ai-center">
+							<a href="#" class="sociable__btn _icon-viber"></a>
+							<a href="#" class="sociable__btn _icon-insta"></a>
+							<a href="#" class="sociable__btn _icon-tg"></a>
+							<a href="#" class="sociable__btn _icon-fb"></a>
+						</div>
+						<a data-da=".menu__body,767,first" href="tel:+380678293030" class="header-contacts__phone d-flex jc-sb ai-center hhv-pink">
+							+38 (067) 829 30 30
+							<button class="button header-contacts__btn">Подзвонить</button>
+						</a>
+						<div class="header-contacts__info info-contacts d-flex ai-center">
+							<a href="#" class="info-contacts__btn info-contacts__btn_dn-600 _icon-like hhv-pink"><span>2</span></a>
+							<a href="#" class="info-contacts__btn _icon-cart hhv-pink"><span>1</span></a>
+							<div class="info-contacts__price w-space-no-wrap">₴ 1 520</div>
+						</div>
+					</div>
+					<button data-da=".header-content,480,first" type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="product">
+				<div class="product__container">
+					<div class="product__path path d-flex ai-center">
+						<a href="#">Главная</a>
+						<a href="#">Каталог</a>
+						<a href="#">25 желтых тюльпанов</a>
+					</div>
+					<div class="product__body d-flex">
+						<div class="product__sliders">
+							<div class="product-slider swiper">
+								<div class="product-slider__wrapper swiper-wrapper">
+									<div class="product-slider__slide products-slider__slide slide-products swiper-slide">
+										<div class="slide-products__discount-percent product-slider__discount">-19%</div>
+										<div class="slide-products__like product-slider__like">
+											<button type="button" class="slide-products__like-btn _icon-like"></button>
+											<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+										</div>
+										<div data-gallery class="product-slider__img">
+											<picture><source data-srcset="img/product/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-fluid" data-src="img/product/2.png" alt="25 желтых тюльпанов"></picture>
+										</div>
+									</div>
+									<div class="product-slider__slide products-slider__slide slide-products swiper-slide">
+										<div class="slide-products__discount-percent product-slider__discount">-19%</div>
+										<div class="slide-products__like product-slider__like">
+											<button type="button" class="slide-products__like-btn _icon-like"></button>
+											<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+										</div>
+										<div data-gallery class="product-slider__img">
+											<picture><source data-srcset="img/product/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-fluid" data-src="img/product/1.png" alt="25 желтых тюльпанов"></picture>
+										</div>
+									</div>
+									<div class="product-slider__slide products-slider__slide slide-products swiper-slide">
+										<div class="slide-products__discount-percent product-slider__discount">-19%</div>
+										<div class="slide-products__like product-slider__like">
+											<button type="button" class="slide-products__like-btn _icon-like"></button>
+											<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+										</div>
+										<div data-gallery class="product-slider__img">
+											<picture><source data-srcset="img/product/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-fluid" data-src="img/product/2.png" alt="25 желтых тюльпанов"></picture>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div thumbsSlider="" class="product-slider-thumbs swiper">
+								<div class="product-slider__wrapper swiper-wrapper">
+									<div class="product-slider__slide swiper-slide">
+										<div class="product-slider__img">
+											<picture><source data-srcset="img/product/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-fluid" data-src="img/product/2.png" alt="25 желтых тюльпанов"></picture>
+										</div>
+									</div>
+									<div class="product-slider__slide swiper-slide">
+										<div class="product-slider__img">
+											<picture><source data-srcset="img/product/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-fluid" data-src="img/product/1.png" alt="25 желтых тюльпанов"></picture>
+										</div>
+									</div>
+									<div class="product-slider__slide swiper-slide">
+										<div class="product-slider__img">
+											<picture><source data-srcset="img/product/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-fluid" data-src="img/product/2.png" alt="25 желтых тюльпанов"></picture>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product__content content-product">
+							<a href="#" class="content-product__link _icon-arrow-down d-flex direction-row-rev jc-end hhv-pink-grey">Букеты из тюльпанов</a>
+							<h3 class="content-product__title title title_s36">25 желтых тюльпанов</h3>
+							<div class="content-product__top d-flex direction-col jc-sb">
+								<div class="content-product__row d-flex">
+									<div class="content-product__label">В наличии</div>
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+								</div>
+								<div class="content-product__prices d-flex">
+									<h3 class="content-product__price title title_s36 pink-color">795.00грн.</h3>
+									<div class="content-product__disprice">995.00грн.</div>
+								</div>
+							</div>
+							<div data-da=".product-tabs,992,first" class="content-product__info info-product">
+								<div class="info-product__item d-flex">
+									<div class="info-product__label">Цветы</div>
+									<div class="info-product__descr">25 желтых тюльпанов</div>
+								</div>
+								<div class="info-product__item d-flex">
+									<div class="info-product__label">Размер</div>
+									<div class="info-product__descr">50-60 см</div>
+								</div>
+								<div class="info-product__item d-flex">
+									<div class="info-product__label">Материалы</div>
+									<div class="info-product__descr">Декоративный флористический материал</div>
+								</div>
+								<div class="info-product__item d-flex">
+									<div class="info-product__label">Дополнительно</div>
+									<div class="info-product__descr">Оформление</div>
+								</div>
+							</div>
+							<div class="content-product__action action-product d-flex ai-center">
+								<div class="action-product__counter counter-product d-flex ai-center">
+									<button data-count-l class="counter-product__btn counter-product__btn_l _icon-arrow-down hhv-pink" type="button"></button>
+									<div class="action-product__num">1</div>
+									<button data-count-r class="counter-product__btn counter-product__btn_r _icon-arrow-down hhv-pink" type="button"></button>
+								</div>
+								<button class="action-product__btn button" type="button">В корзину</button>
+							</div>
+							<div class="content-product__label">Быстрый заказ</div>
+							<form action="#" method="post" class="content-product__form form-product d-flex ai-center">
+								<div class="form__item form-product__input d-flex">
+									<lable for="phone" class="form-product__label form__label">Номер телефна</lable>
+									<input autocomplete="off" type="text" value="+380" id="phone" name="phone" data-error="Ошибка" placeholder="" class="input">
+								</div>
+								<button class="form-product__btn button _icon-tg" type="submit"><span>Быстрый заказ</span></button>
+							</form>
+							<div data-tabs data-tabs-animate class="product-tabs">
+								<nav data-tabs-titles class="product-tabs__navigation d-flex ai-center">
+									<button type="button" class="product-tabs__title _tab-active _icon-arrow-down d-flex ai-center direction-row-rev">Доставка</button>
+									<button type="button" class="product-tabs__title _icon-arrow-down d-flex ai-center direction-row-rev">Описание</button>
+									<button type="button" class="product-tabs__title _icon-arrow-down d-flex ai-center direction-row-rev">Отзывы(12)</button>
+								</nav>
+								<div data-tabs-body class="product-tabs__content">
+									<div class="product-tabs__body">
+										<p>
+											Тюльпан - символ любви, весеннего обновления, счастья, теплой и солнечной погоды и хорошего приподнятого настроения! Тюльпан отличается элегантностью форм и изысканностью линий. Если Вы подбираете букет цветов для близкого, дорогого человека, коллеге по работе, то, как нельзя, кстати, придутся нежные чарующие тюльпаны. Преподнося тюльпаны Вы дарите частичку легкого и весеннего настроения!1
+										</p>
+									</div>
+									<div class="product-tabs__body">
+										<p>
+											Тюльпан - символ любви, весеннего обновления, счастья, теплой и солнечной погоды и хорошего приподнятого настроения! Тюльпан отличается элегантностью форм и изысканностью линий. Если Вы подбираете букет цветов для близкого, дорогого человека, коллеге по работе, то, как нельзя, кстати, придутся нежные чарующие тюльпаны. Преподнося тюльпаны Вы дарите частичку легкого и весеннего настроения!2
+										</p>
+									</div>
+									<div class="product-tabs__body">
+										<p>
+											Тюльпан - символ любви, весеннего обновления, счастья, теплой и солнечной погоды и хорошего приподнятого настроения! Тюльпан отличается элегантностью форм и изысканностью линий. Если Вы подбираете букет цветов для близкого, дорогого человека, коллеге по работе, то, как нельзя, кстати, придутся нежные чарующие тюльпаны. Преподнося тюльпаны Вы дарите частичку легкого и весеннего настроения!3
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="products related">
+				<div class="related__container">
+					<div class="products-slider related-slider swiper">
+						<h2 class="products__title title">Сопутствующие товары</h2>
+						<div class="products-slider__controls d-flex ai-center">
+							<button type="button" class="swiper-button-prev hhv-pink _icon-arrow-down"></button>
+							<button type="button" class="swiper-button-next hhv-pink _icon-arrow-down"></button>
+						</div>
+						<div class="products-slider__wrapper swiper-wrapper">
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__discount-percent">-19%</div>
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/stock/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/stock/1.png" alt="101 красная роза"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a href="#" class="slide-products__title hhv-pink-grey">101 красная роза</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__discount">2800 грн</div>
+											<div class="slide-products__price">2280 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__discount-percent">-10%</div>
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/stock/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/stock/2.png" alt="25 розовых пионовидных роз"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a class="slide-products__title hhv-pink-grey">25 розовых пионовидных роз</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__discount">2800 грн</div>
+											<div class="slide-products__price">1680 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__discount-percent">-19%</div>
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/stock/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/stock/3.png" alt="Влюбленность"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a class="slide-products__title hhv-pink-grey">Влюбленность</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__discount">2800 грн</div>
+											<div class="slide-products__price">1270 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__discount-percent">-19%</div>
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/stock/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/stock/4.png" alt="Конзина все для тебя"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a class="slide-products__title hhv-pink-grey">Конзина все для тебя</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__discount">2800 грн</div>
+											<div class="slide-products__price">2020 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__discount-percent">-19%</div>
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/stock/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/stock/1.png" alt="101 красная роза"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a href="#" class="slide-products__title hhv-pink-grey">101 красная роза</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__discount">2800 грн</div>
+											<div class="slide-products__price">2280 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__discount-percent">-10%</div>
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/stock/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/stock/2.png" alt="25 розовых пионовидных роз"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a class="slide-products__title hhv-pink-grey">25 розовых пионовидных роз</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__discount">2800 грн</div>
+											<div class="slide-products__price">1680 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__discount-percent">-19%</div>
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/stock/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/stock/3.png" alt="Влюбленность"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a class="slide-products__title hhv-pink-grey">Влюбленность</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__discount">2800 грн</div>
+											<div class="slide-products__price">1270 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__discount-percent">-19%</div>
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/stock/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/stock/4.png" alt="Конзина все для тебя"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a class="slide-products__title hhv-pink-grey">Конзина все для тебя</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__discount">2800 грн</div>
+											<div class="slide-products__price">2020 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__discount-percent">-19%</div>
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/stock/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/stock/3.png" alt="Влюбленность"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a class="slide-products__title hhv-pink-grey">Влюбленность</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__discount">2800 грн</div>
+											<div class="slide-products__price">1270 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__discount-percent">-19%</div>
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/stock/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/stock/4.png" alt="Конзина все для тебя"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a class="slide-products__title hhv-pink-grey">Конзина все для тебя</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__discount">2800 грн</div>
+											<div class="slide-products__price">2020 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__discount-percent">-19%</div>
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/stock/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/stock/4.png" alt="Конзина все для тебя"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a class="slide-products__title hhv-pink-grey">Конзина все для тебя</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__discount">2800 грн</div>
+											<div class="slide-products__price">2020 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__discount-percent">-19%</div>
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/stock/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/stock/1.png" alt="101 красная роза"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a href="#" class="slide-products__title hhv-pink-grey">101 красная роза</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__discount">2800 грн</div>
+											<div class="slide-products__price">2280 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination related-slider__pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section class="products you-see">
+				<div class="you-see__container">
+					<div class="products-slider you-see-slider swiper">
+						<h2 class="products__title title">Вы просматривали</h2>
+						<div class="products-slider__controls d-flex ai-center">
+							<button type="button" class="swiper-button-prev hhv-pink _icon-arrow-down"></button>
+							<button type="button" class="swiper-button-next hhv-pink _icon-arrow-down"></button>
+						</div>
+						<div class="products-slider__wrapper swiper-wrapper">
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/seasonal/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/seasonal/1.png" alt="Мечтательница"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a href="#" class="slide-products__title hhv-pink-grey">Мечтательница</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__price">2280 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/seasonal/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/seasonal/2.png" alt="Корзина солнечного настроения"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a href="#" class="slide-products__title hhv-pink-grey">Корзина солнечного настроения</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__price">1680 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/seasonal/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/seasonal/3.png" alt="Цветочная клумба"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a href="#" class="slide-products__title hhv-pink-grey">Цветочная клумба</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__price">1270 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/seasonal/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/seasonal/4.png" alt="Конзина Дюймовочка"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a href="#" class="slide-products__title hhv-pink-grey">Конзина Дюймовочка</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__price">2020 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/seasonal/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/seasonal/1.png" alt="Мечтательница"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a href="#" class="slide-products__title hhv-pink-grey">Мечтательница</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__price">2280 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/seasonal/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/seasonal/2.png" alt="Корзина солнечного настроения"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a href="#" class="slide-products__title hhv-pink-grey">Корзина солнечного настроения</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__price">1680 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/seasonal/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/seasonal/3.png" alt="Цветочная клумба"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a href="#" class="slide-products__title hhv-pink-grey">Цветочная клумба</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__price">1270 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide slide-products swiper-slide">
+								<div class="slide-products__preview">
+									<div class="slide-products__like">
+										<button type="button" class="slide-products__like-btn _icon-like"></button>
+										<button type="button" class="slide-products__like-btn_fill _icon-like-fill"></button>
+									</div>
+									<a href="#" class="slide-products__img">
+										<picture><source data-srcset="img/seasonal/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-w-100p" data-src="img/seasonal/4.png" alt="Конзина Дюймовочка"></picture>
+									</a>
+									<div class="slide-products__label">TOP</div>
+								</div>
+								<div class="slide-products__actions">
+									<div class="slide-products__stars d-flex ai-center">
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+										<div class="slide-products__star _icon-star"></div>
+									</div>
+									<div class="slide-products__info d-flex jc-sb">
+										<a href="#" class="slide-products__title hhv-pink-grey">Конзина Дюймовочка</a>
+										<div class="slide-products__prices">
+											<div class="slide-products__price">2020 грн</div>
+										</div>
+									</div>
+									<div class="slide-products__btns d-flex ai-center">
+										<button class="slide-products__btn button _icon-cart" type="button"><span>Заказать</span></button>
+										<button class="slide-products__btn slide-products__btn_no-bg" type="button">Быстрый заказ</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination you-see-slider__pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="contacts__container">
+					<div class="contacts__map">
+						<iframe class="img-w-100p" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8534.799938740196!2d30.512388118621416!3d50.507914339258434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d384545e8773%3A0x90406c9eff1c3402!2sOstriv%20Savanna!5e0!3m2!1sru!2sua!4v1675183761036!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="contacts__content d-flex direction-col">
+						<a href="home.html" class="contacts__logo as-center">
+							<picture><source data-srcset="img/logo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/logo.png" alt="Logo"></picture>
+						</a>
+						<div class="contacts__links d-flex direction-col">
+							<div class="contacts__item d-flex ai-start">
+								<div class="contacts__descr _icon-tel d-flex ai-center">Телефон:</div>
+								<div class="contacts__link-wrap d-flex direction-col">
+									<a href="tel:+380638293030" class="contacts__link hhv-pink">+38 (063) 829 30 30</a>
+									<a href="tel:+380638293030" class="contacts__link hhv-pink">+38 (063) 829 30 30</a>
+								</div>
+							</div>
+							<div class="contacts__item d-flex ai-start">
+								<div class="contacts__descr _icon-skype d-flex ai-center">Skype:</div>
+								<div class="contacts__link-wrap d-flex direction-col">
+									<a class="contacts__link">Flowers-Ukraine</a>
+								</div>
+							</div>
+							<div class="contacts__item d-flex ai-start">
+								<div class="contacts__descr _icon-mail d-flex ai-center">Почта:</div>
+								<div class="contacts__link-wrap d-flex direction-col">
+									<a href="mailto:flowers.ukraine2014@gmail.com" class="contacts__link hhv-pink">flowers.ukraine2014@gmail.com</a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__sociable sociable d-flex ai-center">
+							<a href="#" class="sociable__btn _icon-insta"></a>
+							<a href="#" class="sociable__btn _icon-skype"></a>
+							<a href="#" class="sociable__btn _icon-fb"></a>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__decor decor decor_l">
+				<picture><source srcset="img/footer/flower.webp" type="image/webp"><img src="img/footer/flower.png" alt="Flower"></picture>
+			</div>
+			<div class="footer__decor decor decor_r">
+				<picture><source srcset="img/footer/flower.webp" type="image/webp"><img src="img/footer/flower.png" alt="Flower"></picture>
+			</div>
+			<div class="footer__container">
+				<div class="footer__content d-flex">
+					<a href="#" class="footer__logo">
+						<picture><source srcset="img/logo-w.webp" type="image/webp"><img class="img-fluid" src="img/logo-w.png" alt="Logo"></picture>
+					</a>
+					<div data-spollers="767,max" class="footer__spollers spollers-footer d-grid col-lg-20 col-sm-50">
+						<div class="spollers-footer__spoller">
+							<button type="button" data-spoller class="spollers-footer__title d-flex ai-center direction-row-rev _icon-arrow-down">ИНФОРМАЦИЯ</button>
+							<ul class="spollers-footer__body">
+								<li class="spollers-footer__item"><a href="#" class="spollers-footer__link hhv-pink-grey">О НАС</a></li>
+								<li class="spollers-footer__item"><a href="#" class="spollers-footer__link hhv-pink-grey">ДОСТАВКА И ОПЛАТА</a></li>
+								<li class="spollers-footer__item"><a href="#" class="spollers-footer__link hhv-pink-grey">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+							</ul>
+						</div>
+						<div class="spollers-footer__spoller">
+							<button type="button" data-spoller class="spollers-footer__title d-flex ai-center direction-row-rev _icon-arrow-down">СЛУЖБА ПОДДЕРЖКИ</button>
+							<ul class="spollers-footer__body">
+								<li class="spollers-footer__item"><a href="#" class="spollers-footer__link hhv-pink-grey">КАРТА САЙТА</a></li>
+								<li class="spollers-footer__item"><a href="#" class="spollers-footer__link hhv-pink-grey">ВОЗВРАТ ТОВАРА</a></li>
+								<li class="spollers-footer__item"><a href="#" class="spollers-footer__link hhv-pink-grey">СВЯЗАТЬСЯ С НАМИ</a></li>
+								<li class="spollers-footer__item"><a href="#" class="spollers-footer__link hhv-pink-grey">ДЛЯ СОТРУДНИЧЕСТВА</a></li>
+							</ul>
+						</div>
+						<div class="spollers-footer__spoller">
+							<button type="button" data-spoller class="spollers-footer__title d-flex ai-center direction-row-rev _icon-arrow-down">ЛИЧНЫЙ КАБИНЕТ</button>
+							<ul class="spollers-footer__body">
+								<li class="spollers-footer__item"><a href="#" class="spollers-footer__link hhv-pink-grey">ЛИЧНЫЙ КАБИНЕТ</a></li>
+								<li class="spollers-footer__item"><a href="#" class="spollers-footer__link hhv-pink-grey">ИСТОРИЯ ЗАКАЗА</a></li>
+								<li class="spollers-footer__item"><a href="#" class="spollers-footer__link hhv-pink-grey">ЗАКЛАДКИ</a></li>
+								<li class="spollers-footer__item"><a href="#" class="spollers-footer__link hhv-pink-grey">СПИСОК НОВОСТЕЙ</a></li>
+							</ul>
+						</div>
+						<div class="spollers-footer__spoller">
+							<button type="button" data-spoller class="spollers-footer__title d-flex ai-center direction-row-rev _icon-arrow-down">ДОПОЛНИТЕЛЬНО</button>
+							<ul class="spollers-footer__body">
+								<li class="spollers-footer__item"><a href="#" class="spollers-footer__link hhv-pink-grey">ПОДАРОЧНЫЕ</a></li>
+								<li class="spollers-footer__item"><a href="#" class="spollers-footer__link hhv-pink-grey">СЕРТИФИКАТЫ</a></li>
+								<li class="spollers-footer__item"><a href="#" class="spollers-footer__link hhv-pink-grey">АКЦИИ</a></li>
+								<li class="spollers-footer__item"><a href="#" class="spollers-footer__link hhv-pink-grey">ЦВЕТЫ В ОФИС</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom d-flex ai-center jc-sb">
+					<div class="footer__copy white-color">Copyright © 2023. Все права защищены</div>
+					<div class="footer__images d-flex ai-center jc-center">
+						<div class="footer__descr white-color">Способы оплаты:</div>
+						<div class="footer__img">
+							<picture><source data-srcset="img/footer/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-fluid" data-src="img/footer/1.png" alt="PrivatBank"></picture>
+						</div>
+						<div class="footer__img">
+							<picture><source data-srcset="img/footer/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-fluid" data-src="img/footer/2.png" alt="Liqpay"></picture>
+						</div>
+						<div class="footer__img">
+							<picture><source data-srcset="img/footer/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-fluid" data-src="img/footer/3.png" alt="MasterCart"></picture>
+						</div>
+						<div class="footer__img">
+							<picture><source data-srcset="img/footer/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-fluid" data-src="img/footer/4.png" alt="Maestro"></picture>
+						</div>
+						<div class="footer__img">
+							<picture><source data-srcset="img/footer/5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-fluid" data-src="img/footer/5.png" alt="Visa Electron"></picture>
+						</div>
+						<div class="footer__img">
+							<picture><source data-srcset="img/footer/6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="img-fluid" data-src="img/footer/6.png" alt="Visa"></picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+
+
+	</div>
+	<script src="js/app.min.js?_v=20230206130638"></script>
+</body>
+
+</html>
